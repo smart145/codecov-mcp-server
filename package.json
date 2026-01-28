@@ -1,10 +1,14 @@
 {
-  "name": "codecov-mcp-server",
+  "name": "@smart145/codecov-mcp-server",
   "version": "1.0.0",
   "description": "MCP server for Codecov integration - check code coverage from Claude Code",
   "main": "dist/index.js",
   "bin": {
     "codecov-mcp-server": "dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/smart145/codecov-mcp-server.git"
   },
   "type": "module",
   "scripts": {

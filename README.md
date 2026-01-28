@@ -17,13 +17,13 @@ An MCP (Model Context Protocol) server that integrates with Codecov's API, enabl
 ### Via npx (Recommended)
 
 ```bash
-npx codecov-mcp-server
+npx @smart145/codecov-mcp-server
 ```
 
 ### Via npm (Global)
 
 ```bash
-npm install -g codecov-mcp-server
+npm install -g @smart145/codecov-mcp-server
 codecov-mcp-server
 ```
 
@@ -49,7 +49,7 @@ npm run build
 **Option 1: Using `claude mcp add` (Recommended)**
 
 ```bash
-claude mcp add codecov -e CODECOV_API_TOKEN=your-token-here -- npx codecov-mcp-server
+claude mcp add codecov -e CODECOV_API_TOKEN=your-token-here -- npx @smart145/codecov-mcp-server
 ```
 
 **Option 2: Manual JSON config**
@@ -61,7 +61,7 @@ Add to your Claude Code MCP settings (`~/.claude.json` or project `.claude/setti
   "mcpServers": {
     "codecov": {
       "command": "npx",
-      "args": ["codecov-mcp-server"],
+      "args": ["@smart145/codecov-mcp-server"],
       "env": {
         "CODECOV_API_TOKEN": "your-token-here"
       }
@@ -207,7 +207,7 @@ Example (Claude Code):
 claude mcp add codecov \
   -e CODECOV_API_TOKEN=your-token-here \
   -e CODECOV_API_HOSTNAME=codecov.example.com \
-  -- npx codecov-mcp-server
+  -- npx @smart145/codecov-mcp-server
 ```
 
 Specify the service when querying if not using GitHub:

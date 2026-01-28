@@ -16,7 +16,7 @@ Ensure the codecov MCP server is configured:
   "mcpServers": {
     "codecov": {
       "command": "npx",
-      "args": ["codecov-mcp-server"],
+      "args": ["@smart145/codecov-mcp-server"],
       "env": { "CODECOV_API_TOKEN": "..." }
     }
   }
